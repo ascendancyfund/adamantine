@@ -1,0 +1,222 @@
+.currencyconverter-f-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+.currencyconverter-f-col {
+  position: relative;
+  min-height: 1px;
+}
+.currencyconverter-f-row-hor-justify {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.currencyconverter-f-row-ver-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.currencyconverter-update-data-link,
+.currencyconverter-base-currency-link,
+.currencyconverter-update-data-link:focus,
+.currencyconverter-base-currency-link:focus,
+.currencyconverter-update-data-link:visited,
+.currencyconverter-base-currency-link:visited,
+.currencyconverter-update-data-link:hover,
+.currencyconverter-base-currency-link:hover,
+.currencyconverter-update-data-link:visited:hover,
+.currencyconverter-base-currency-link:visited:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  cursor: text !important;
+}
+.currencyconverter-trend {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  margin-left: .3em;
+  margin-right: .3em;
+}
+.currencyconverter-trend-up {
+  border-width: 0 .37em .5em .37em;
+  border-color: transparent transparent green transparent;
+  top: -0.1em;
+}
+.currencyconverter-trend-down {
+  border-width: .5em .37em 0 .37em;
+  border-color: red transparent transparent transparent;
+  top: -0.1em;
+}
+.currencyconverter--trend-flat {
+  background-color: gray;
+  border-radius: 50%;
+  width: .5em;
+  height: .5em;
+}
+.currencyconverter-flag-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.currencyconverter-flag-icon-16 {
+  top: -0.06em;
+}
+.currencyconverter-color-up {
+  color: green;
+}
+.currencyconverter--color-down {
+  color: red;
+}
+.widget_currencyconverter_table table tr {
+  vertical-align: top;
+}
+.widget_currencyconverter_table table tr td {
+  line-height: 1.3;
+}
+.widget_currencyconverter_table .currencyconverter-per {
+  display: block;
+  line-height: 1;
+  font-size: .8em;
+  margin-top: .2em;
+  opacity: .7;
+}
+.widget_currencyconverter_minimalistic .currencyconverter-support-info-container {
+  margin-top: 1em;
+}
+.currencyconverter-minimalistic-container {
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.currencyconverter-minimalistic-single-currency {
+  padding: 9px 15px 12px 15px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+.currencyconverter-minimalistic-single-currency:first-child {
+  border-top: 0;
+}
+.currencyconverter-minimalistic-row {
+  display: block;
+}
+.currencyconverter-minimalistic-currency-price {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 300;
+}
+.currencyconverter-minimalistic-inline-list {
+  display: block;
+  margin-top: 6px;
+  margin-right: -6px;
+}
+.currencyconverter-minimalistic-inline-list-item {
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 400;
+}
+.widget_currencyconverter_minimalistic_ver2 .currencyconverter-support-info-container {
+  margin-top: 1em;
+}
+.currencyconverter-minimalistic-ver2-container {
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.currencyconverter-minimalistic-ver2-header {
+  padding: 10px 11px 14px 11px;
+  line-height: 1;
+}
+.currencyconverter-minimalistic-ver2-header-base-currency {
+  font-size: 35px;
+  font-weight: 300;
+  display: block;
+}
+.currencyconverter-minimalistic-ver2-header-currency-caption {
+  display: block;
+  font-size: 12px;
+  margin-top: 7px;
+}
+.currencyconverter-minimalistic-ver2-header-equal {
+  height: 1px;
+  line-height: 1;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.currencyconverter-minimalistic-ver2-header-equal .currencyconverter-f-col-dash-1 span,
+.currencyconverter-minimalistic-ver2-header-equal .currencyconverter-f-col-dash-2 span {
+  display: block;
+}
+.currencyconverter-minimalistic-ver2-header-equal .currencyconverter-f-col-dash-1 {
+  -webkit-flex-basis: 7px;
+      -ms-flex-preferred-size: 7px;
+          flex-basis: 7px;
+}
+.currencyconverter-minimalistic-ver2-header-equal .currencyconverter-f-col-equal {
+  padding: 0 4px;
+}
+.currencyconverter-minimalistic-ver2-header-equal .currencyconverter-f-col-dash-2 {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.currencyconverter-minimalistic-ver2-separator-dash {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+.currencyconverter-minimalistic-ver2-single-currency {
+  padding: 12px 11px;
+  line-height: 1;
+}
+.currencyconverter-minimalistic-ver2-single-currency:first-child {
+  border-top: 0;
+}
+.currencyconverter-minimalistic-ver2-row {
+  display: block;
+}
+.currencyconverter-minimalistic-ver2-row-captions {
+  margin-top: 8px;
+}
+.currencyconverter-minimalistic-ver2-currency-price {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 300;
+}
+.currencyconverter-minimalistic-ver2-inline-list {
+  display: block;
+  margin-right: -6px;
+}
+.currencyconverter-minimalistic-ver2-inline-list-item {
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+}
+/*# sourceMappingURL=frontend.css.map */

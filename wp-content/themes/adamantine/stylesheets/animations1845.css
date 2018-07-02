@@ -1,0 +1,407 @@
+/* VC Custom BOC Animations */
+
+/* For larger screens */
+@media only screen and (min-width: 769px) {
+
+	.boc_animate_when_almost_visible {
+		opacity: 0;
+	}
+	/* Used for gradually showing items like .info_item */
+	.boc_anim_hidden {
+		opacity: 0;
+	}
+
+	/* Global animation. delay: 0.25s */
+	.boc_start_animation, .wpb_start_animation {
+		opacity:1;
+		-webkit-transition:  transform 0.7s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		-moz-transition: transform 0.7s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		-o-transition: transform 0.7s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		-ms-transition: transform 0.7s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		transition: transform 0.7s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+	}
+
+	/* Especially for buttons */
+	.boc_start_animation.button {
+		-webkit-transition: all 0.15s linear, transform 0.9s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		-moz-transition: all 0.15s linear, transform 0.9s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		-ms-transition: all 0.15s linear, transform 0.9s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		-o-transition: all 0.15s linear, transform 0.9s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+		transition: all 0.15s linear, transform 0.9s cubic-bezier(.26,.87,.44,1) 0.25s, opacity 0.6s ease 0.25s;
+	}
+
+	/*  Bounce back */
+	.boc_start_animation.back {
+		-webkit-transition:  transform 0.7s cubic-bezier(.25,1.59,.62,1.04), opacity 0.7s ease;
+		-moz-transition: transform 0.7s cubic-bezier(.25,1.59,.62,1.04), opacity 0.7s ease;
+		-o-transition: transform 0.7s cubic-bezier(.25,1.59,.62,1.04), opacity 0.7s ease;
+		-ms-transition: transform 0.7s cubic-bezier(.25,1.59,.62,1.04), opacity 0.7s ease;
+		transition: transform 0.7s cubic-bezier(.25,1.59,.62,1.04), opacity 0.7s ease;
+	}
+
+	.boc_start_animation.boc_top-to-bottom, .wpb_start_animation.boc_top-to-bottom {
+		transform: translateY(0px);
+	}
+	.boc_top-to-bottom {
+		transform: translateY(-40px);
+	}
+
+	.boc_start_animation.boc_bottom-to-top, .wpb_start_animation.boc_bottom-to-top {
+		transform: translateY(0px);
+	}
+	.boc_bottom-to-top {
+		transform: translateY(40px);
+	}
+
+	.boc_start_animation.boc_left-to-right, .wpb_start_animation.boc_left-to-right {
+		transform: translateY(0px);
+	}
+	.boc_left-to-right {
+		transform: translateX(-40px);
+	}
+
+	.boc_start_animation.boc_right-to-left, .wpb_start_animation.boc_right-to-left {
+		transform: translateY(0px);
+	}
+	.boc_right-to-left {
+		transform: translateX(40px);
+	}
+
+	/* Preloader */
+	@-webkit-keyframes spin{
+		100%{-webkit-transform:rotate(360deg)}
+	}
+	@-moz-keyframes spin{
+		100%{-moz-transform:rotate(360deg)}
+	}
+	@keyframes spin{
+		100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}
+	}	
+	
+
+	/* These are for Owl Carousel from Animation.css lib */
+
+	@-webkit-keyframes fadeIn {
+	  0% {opacity: 0;}
+	  100% {opacity: 1;}
+	}
+	@keyframes fadeIn {
+	  0% {opacity: 0;}
+	  100% {opacity: 1;}
+	}
+	.fadeIn {
+	  -webkit-animation-name: fadeIn;
+			  animation-name: fadeIn;
+	}
+
+	@-webkit-keyframes fadeOutDown {
+	  0% {
+		opacity: 1;
+	  }
+	  100% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+				transform: translate3d(0, 100%, 0);
+	  }
+	}
+	@keyframes fadeOutDown {
+	  0% {
+		opacity: 1;
+	  }
+	  100% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+				transform: translate3d(0, 100%, 0);
+	  }
+	}
+	.fadeOutDown {
+	  -webkit-animation-name: fadeOutDown;
+			  animation-name: fadeOutDown;
+	}
+
+	@-webkit-keyframes fadeInUp {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+				transform: translate3d(0, 100%, 0);
+	  }
+	  100% {
+		opacity: 1;
+		-webkit-transform: none;
+				transform: none;
+	  }
+	}
+	@keyframes fadeInUp {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+				transform: translate3d(0, 100%, 0);
+	  }
+	  100% {
+		opacity: 1;
+		-webkit-transform: none;
+				transform: none;
+	  }
+	}
+	.fadeInUp {
+	  -webkit-animation-name: fadeInUp;
+			  animation-name: fadeInUp;
+	}
+
+
+	@-webkit-keyframes flipInX {
+	  0% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, 90deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, 90deg);
+		-webkit-transition-timing-function: ease-in;
+				transition-timing-function: ease-in;
+		opacity: 0;
+	  }
+	  40% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, -20deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, -20deg);
+		-webkit-transition-timing-function: ease-in;
+				transition-timing-function: ease-in;
+	  }
+	  60% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, 10deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, 10deg);
+		opacity: 1;
+	  }
+	  80% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, -5deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, -5deg);
+	  }
+	  100% {
+		-webkit-transform: perspective(6000px);
+				transform: perspective(6000px);
+	  }
+	}
+	@keyframes flipInX {
+	  0% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, 90deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, 90deg);
+		-webkit-transition-timing-function: ease-in;
+				transition-timing-function: ease-in;
+		opacity: 0;
+	  }
+	  40% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, -20deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, -20deg);
+		-webkit-transition-timing-function: ease-in;
+				transition-timing-function: ease-in;
+	  }
+	  60% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, 10deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, 10deg);
+		opacity: 1;
+	  }
+	  80% {
+		-webkit-transform: perspective(6000px) rotate3d(1, 0, 0, -5deg);
+				transform: perspective(6000px) rotate3d(1, 0, 0, -5deg);
+	  }
+	  100% {
+		-webkit-transform: perspective(6000px);
+				transform: perspective(6000px);
+	  }
+	}
+	.flipInX {
+	  -webkit-backface-visibility: visible !important;
+			  backface-visibility: visible !important;
+	  -webkit-animation-name: flipInX;
+			  animation-name: flipInX;
+	}
+
+
+
+	/* Btn arrow bounce */
+	@-webkit-keyframes sideBounce {
+		0, 100% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
+		50% {
+			-webkit-transform: translateX(6px);
+			transform: translateX(6px);
+			-webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.2);
+			animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.2);
+		}
+	}
+	@keyframes sideBounce {
+		0, 100% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
+		50% {
+			-webkit-transform: translateX(6px);
+			transform: translateX(6px);
+			-webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.2);
+			animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.2);
+		}
+	}
+
+	.sideBounce{
+	-webkit-animation: sideBounce .85s linear infinite;
+			animation: sideBounce .85s linear infinite;
+	}
+	/* For button Icons */
+	.side_bounce_icon i.icon{
+		      display: inline-block;
+	-webkit-animation: sideBounce .85s linear infinite;
+			animation: sideBounce .85s linear infinite;
+	}
+
+
+
+
+
+
+	/* Typed.js */
+	.typed-cursor{
+		opacity: 1;
+		-webkit-animation: blink 0.7s infinite;
+		-moz-animation: blink 0.7s infinite;
+		animation: blink 0.7s infinite;
+	}
+	@keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-webkit-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-moz-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+
+
+
+
+
+
+
+
+
+
+
+	/* Custom Animation for Side Icon boxes */
+	.side_icon_box.boc_animate_when_almost_visible.boc_start_animation > * {
+		-webkit-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-moz-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-o-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-ms-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	}
+
+	.side_icon_box.boc_animate_when_almost_visible .icon_feat {
+		opacity:0;
+		transform: translateX(-40px);
+	}
+	.side_icon_box.boc_animate_when_almost_visible.boc_start_animation .icon_feat {
+		opacity:1;
+		transform: translateX(0px);
+	}
+
+	.side_icon_box.boc_animate_when_almost_visible h3 {
+		opacity:0;
+		transform: translateX(40px);
+	}
+	.side_icon_box.boc_animate_when_almost_visible.boc_start_animation h3 {
+		opacity:1;
+		transform: translateX(0px);
+	}
+
+	.side_icon_box.boc_animate_when_almost_visible .side_icon_box_content {
+		opacity:0;
+		transform: translateX(40px);
+	}
+	.side_icon_box.boc_animate_when_almost_visible.boc_start_animation .side_icon_box_content {
+		opacity:1;	
+		transform: translateX(0px);
+	}
+	/* Custom Animation for Top Icon boxes : END */
+
+
+
+
+
+
+	/* Custom Animation for Top Icon boxes */
+	.top_icon_box.boc_animate_when_almost_visible > *:not(a), 
+	.top_icon_box.boc_animate_when_almost_visible > a > div {
+		opacity:0;
+	}
+	.top_icon_box.boc_animate_when_almost_visible.boc_start_animation > *, 
+	.top_icon_box.boc_animate_when_almost_visible.boc_start_animation > a > div  {
+		opacity:1;
+
+		-webkit-transition: all 1200ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-moz-transition: all 1200ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-o-transition: all 1200ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-ms-transition: all 1200ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		transition: all 1200ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	}
+
+	.top_icon_box.boc_animate_when_almost_visible .icon_holder {
+		display: block;
+		-moz-transform: rotateY( 180deg );
+		-webkit-transform: rotateY( 180deg );
+		transform: rotateY( 180deg );
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+	}
+	.top_icon_box.boc_animate_when_almost_visible.boc_start_animation .icon_holder {
+		-moz-transform: rotateY( 360deg );
+		-webkit-transform: rotateY( 360deg );
+		transform: rotateY( 360deg );	
+	}
+
+	.top_icon_box.boc_animate_when_almost_visible h3 {
+		opacity:0;
+		top:-40px;
+	}
+	.top_icon_box.boc_animate_when_almost_visible.boc_start_animation h3 {
+		opacity:1;
+		top:0px;
+		-webkit-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-moz-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-o-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-ms-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	}
+
+	.top_icon_box.boc_animate_when_almost_visible p {
+		opacity:0;
+		top:40px;
+	}
+	.top_icon_box.boc_animate_when_almost_visible.boc_start_animation p {
+		opacity:1;
+		top:0px;
+
+		-webkit-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-moz-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-o-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		-ms-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+		transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	}
+	/* Custom Animation for Top Icon boxes : END */
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+	
+	/* VC default animations (vc_single_image, vc_column_text) */
+	.wpb_animate_when_almost_visible {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	}
+}
