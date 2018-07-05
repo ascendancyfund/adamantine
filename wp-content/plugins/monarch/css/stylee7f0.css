@@ -985,7 +985,7 @@ margin-right: -66px !important; }
 @-o-keyframes et_social_slideTop { 0% { -o-transform: translateY(0); } 100% { -o-transform: translateY(0); } }
 @keyframes et_social_slideTop { 0% { transform: translateY(0); } 100% { transform: translateY(0); } }
 
-/*! The following animations courtesy of Animate.css - http://daneden.me/animate Licensed under the MIT license - http://opensource.org/licenses/MIT Copyright (c) 2014 Daniel Eden */
+/*! The following animations courtesy of Animate.css - //daneden.me/animate Licensed under the MIT license - //opensource.org/licenses/MIT Copyright (c) 2014 Daniel Eden */
 
 @-webkit-keyframes et_social_swing {
 	20% { -webkit-transform: rotate3d(0, 0, 1, 15deg); transform: rotate3d(0, 0, 1, 15deg); }

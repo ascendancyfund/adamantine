@@ -683,7 +683,7 @@
 							this_alt = $( this ).attr( 'alt' );
 
 						if ( '' != this_img ) {
-							var	pin_link = 'http://www.pinterest.com/pin/create/button/?url=' + permalink + '&media=' + this_img + '&description=' + title,
+							var	pin_link = '//www.pinterest.com/pin/create/button/?url=' + permalink + '&media=' + this_img + '&description=' + title,
 								this_img_container = '<div class="et_social_pin_image"><a href="' + pin_link + '" rel="nofollow" class="et_social_icon et_social_share" data-social_name="pinterest" data-post_id="' + post_id + '" data-social_type="share"><img src="' + this_img + '" alt="' + this_alt + '"/><span class="et_social_pin_overlay et_social_icon"></span></a></div>';
 							$( '.et_social_pin_images' ).append( this_img_container );
 							$i++;

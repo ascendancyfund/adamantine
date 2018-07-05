@@ -3,11 +3,11 @@
  Version 1.1.3
  Author: Ian Lunn
  Twitter: @IanLunn
- Author URL: http://www.ianlunn.co.uk/
- Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+ Author URL: //www.ianlunn.co.uk/
+ Plugin URL: //www.ianlunn.co.uk/plugins/jquery-parallax/
  Dual licensed under the MIT and GPL licenses:
- http://www.opensource.org/licenses/mit-license.php
- http://www.gnu.org/licenses/gpl.html
+ //www.opensource.org/licenses/mit-license.php
+ //www.gnu.org/licenses/gpl.html
  */
 (function( $ ){
 	var $window = jQuery(window);
@@ -68,7 +68,7 @@
 					var disable_row_parallax_effect = 'true';
 				else
 					var disable_row_parallax_effect = 'false';
-				
+
 				if(disable_row_parallax_effect == 'false')
 				{
 					//f = -f;
@@ -102,7 +102,7 @@
 		var prev_pos = $window.scrollTop();
 		// function to be called whenever the window is scrolled or resized
 		function update(){
-			
+
 			var pos = $window.scrollTop();
 			$this.each(function(){
 				firstTop = jQuery(this).offset().top;
@@ -121,7 +121,7 @@
 				}
 				else{
 					f = parseInt( bgxpos ) + parseInt( speedFactor * ( prev_pos - pos ) );
-					
+
 					if(f>0)
 						f=0;
 				}
@@ -134,7 +134,7 @@
 					var disable_row_effect = 'true';
 				else
 					var disable_row_effect = 'false';
-				
+
 				if(disable_row_effect == 'false')
 				{
 					jQuery(this).css('backgroundPosition', f + "px "+ xpos);
@@ -159,13 +159,13 @@
  // Auto Initialization
  //if( ! jQuery.browser.mobile){
 	 jQuery(document).ready(function(){
-		 
+
 		if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
 			var is_mobile = 'false';
 		else
 			var is_mobile = 'true';
-		
-				
+
+
 	 	jQuery('.vcpb-mlvp-jquery').each(function(){
 			var selector = jQuery(this);
 			//var sense = selector.data('parallax_sense');
@@ -186,12 +186,12 @@
 			var is_img_parallax_disable_on_mobile = jQuery(this).parent().data('img-parallax-mobile-disable').toString();
 			layer_count = (sense)/layer_count;
 			sense = 0;
-			
+
 			if(is_mobile == 'true' && is_img_parallax_disable_on_mobile == 'true')
 				var disable_row_effect = 'true';
 			else
 				var disable_row_effect = 'false';
-			
+
 			jQuery(this).find('.vertical_layer_parallax').each(function(index){
 				sense += layer_count;
 				jQuery(this).css({'height':jQuery(this).parent().outerHeight()+'px','width':jQuery(this).parent().outerWidth()+'px',}).

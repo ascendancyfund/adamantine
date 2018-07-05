@@ -1,10 +1,10 @@
 /** jQuery.bsf_appear
  * https://github.com/bas2k/jquery.bsf_appear/
- * http://code.google.com/p/jquery-bsf_appear/
+ * //code.google.com/p/jquery-bsf_appear/
  *
  * Copyright (c) 2009 Michael Hixson
  * Copyright (c) 2012 Alexander Brovikov
- * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
+ * Licensed under the MIT license (//www.opensource.org/licenses/mit-license.php)
  */
 (function($) {
 	$.fn.bsf_appear = function(fn, options) {

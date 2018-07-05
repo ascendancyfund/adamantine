@@ -1,7 +1,7 @@
 /*
  * Mapplic - Custom Interactive Map Plugin by @sekler
  * Version 3.1
- * http://www.mapplic.com
+ * //www.mapplic.com
  */
 
 (function($) {
@@ -153,7 +153,7 @@
 						s.position();
 					});
 					this.position();
-				
+
 					// Making it visible
 					this.el.stop().show();
 				}
@@ -183,7 +183,7 @@
 						if (this.el.outerWidth()/2 > cx)
 							verticalPos = 0.5 - (this.el.outerWidth()/2 - cx)/this.el.outerWidth();
 						else if ((self.container.width() - cx - this.el.outerWidth()/2) < 0)
-							verticalPos = 0.5 + (cx + this.el.outerWidth()/2 - self.container.width())/this.el.outerWidth(); 
+							verticalPos = 0.5 + (cx + this.el.outerWidth()/2 - self.container.width())/this.el.outerWidth();
 
 						verticalPos = Math.max(0, Math.min(1, verticalPos));
 						ml = -this.el.outerWidth() * verticalPos;
@@ -204,7 +204,7 @@
 				var s = this;
 
 				this.location = null;
-				
+
 				this.el.stop().fadeOut(300, function() {
 					s.desc.empty();
 				});
@@ -224,7 +224,7 @@
 				this.title = $('<h4></h4>').addClass('mapplic-tooltip-title').appendTo(this.el);
 				this.triangle = $('<div></div>').addClass('mapplic-tooltip-triangle').appendTo(this.el);
 
-				// Events 
+				// Events
 				// pins + old svg
 				$(self.map).on('mouseover', '.mapplic-layer a', function() {
 					var id = '';
@@ -289,7 +289,7 @@
 				if (this.el.outerWidth()/2 > cx)
 					verticalPos = 0.5 - (this.el.outerWidth()/2 - cx)/this.el.outerWidth();
 				else if ((self.container.width() - cx - this.el.outerWidth()/2) < 0)
-					verticalPos = 0.5 + (cx + this.el.outerWidth()/2 - self.container.width())/this.el.outerWidth(); 
+					verticalPos = 0.5 + (cx + this.el.outerWidth()/2 - self.container.width())/this.el.outerWidth();
 
 				ml = -this.el.outerWidth() * verticalPos;
 				this.triangle.css('left', Math.max(10, Math.min(90, verticalPos * 100)) + '%');
@@ -503,7 +503,7 @@
 				var morepos = data.description.indexOf('<p><!--more--></p>');
 				if (morepos > 0) $('<span></span>').html(data.description.substring(0, morepos)).appendTo(link);
 				else $('<span></span>').html(data.description).appendTo(link);
-				
+
 				var category = $('.mapplic-list-category[data-category="' + data.category + '"]');
 
 				if (category.length) $('ol', category).append(item);
@@ -541,7 +541,7 @@
 		// Clear Button
 		function ClearButton() {
 			this.el = null;
-			
+
 			this.init = function() {
 				this.el = $('<a></a>').attr('href', '#').addClass('mapplic-clear-button').appendTo(self.container);
 
@@ -558,7 +558,7 @@
 		// Zoom Buttons
 		function ZoomButtons() {
 			this.el = null;
-		
+
 			this.init = function() {
 				this.el = $('<div></div>').addClass('mapplic-zoom-buttons').appendTo(self.container);
 
@@ -697,7 +697,7 @@
 							$('<div></div>').addClass('mapplic-map-image').load(source, function() {
 								// setting up the location on the map
 								$(self.o.selector, this).each(function() {
-									var location = getLocationData($(this).attr('id')); 
+									var location = getLocationData($(this).attr('id'));
 									if (location) {
 										$(this).attr('class', 'mapplic-clickable');
 										location.onmap = $(this);
@@ -708,7 +708,7 @@
 										}
 
 										// Landmark mode
-										if (self.o.landmark === location.id) $(this).attr('class', 'mapplic-active'); 
+										if (self.o.landmark === location.id) $(this).attr('class', 'mapplic-active');
 									}
 								});
 
@@ -722,7 +722,7 @@
 
 								// Support for the old map format
 								$('svg a', this).each(function() {
-									var location = getLocationData($(this).attr('xlink:href').substr(1)); 
+									var location = getLocationData($(this).attr('xlink:href').substr(1));
 									if (location) {
 										$(this).attr('class', 'mapplic-clickable');
 										location.onmap = $(this);
@@ -737,7 +737,7 @@
 							}).appendTo(layer);
 							break;
 
-						// Other 
+						// Other
 						default:
 							alert('File type ' + extension + ' is not supported!');
 					}
@@ -751,7 +751,7 @@
 					if (!shownLevel || value.show) {
 						shownLevel = value.id;
 					}
-					
+
 					// Iterate through locations
 					$.each(value.locations, function(index, value) {
 						var top = value.y * 100;
@@ -826,12 +826,12 @@
 				self.levelselect.appendTo(self.levels);
 				var down = $('<a href="#"></a>').addClass('mapplic-levels-down').appendTo(self.levels);
 				self.container.append(self.levels);
-			
+
 				self.levelselect.change(function() {
 					var value = $(this).val();
 					switchLevel(value);
 				});
-			
+
 				up.click(function(e) {
 					e.preventDefault();
 					if (!$(this).hasClass('mapplic-disabled')) switchLevel('+');
@@ -845,7 +845,7 @@
 			switchLevel(shownLevel);
 
 			// Browser resize
-			$(window).resize(function() {				
+			$(window).resize(function() {
 				// Mobile
 				if ($(window).width() < 668) {
 					self.container.height($(window).height() - 66);
@@ -922,7 +922,7 @@
 					map.data('lastX', x);
 					map.data('lastY', y);
 				});
-			
+
 				$(document).on('mouseup', function(event) {
 					self.x = map.data('lastX');
 					self.y = map.data('lastY');
@@ -994,7 +994,7 @@
 					mapbody.off('touchmove touchend');
 				});
 			});
-			
+
 			// Pinch zoom
 			var hammer = new Hammer(self.map[0], {
 				transform_always_block: true,
@@ -1024,7 +1024,7 @@
 				self.dragging = true;
 
 				if (e.scale != 1) scale = Math.max(1, Math.min(last_scale * e.scale, 100));
-				
+
 				var oldscale = self.scale;
 				self.scale = normalizeScale(scale * self.fitscale);
 

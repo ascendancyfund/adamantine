@@ -15,7 +15,7 @@ jQuery(document).ready(function(){
 		// webdev.stephband.info/events/frame/
 		//
 		// Source:
-		// http://github.com/stephband/jquery.event.frame
+		// //github.com/stephband/jquery.event.frame
 		(function(d,h){function i(a,b){function e(){f.frameCount++;a.call(f)}var f=this,g;this.frameDuration=b||25;this.frameCount=-1;this.start=function(){e();g=setInterval(e,this.frameDuration)};this.stop=function(){clearInterval(g);g=null}}function j(){var a=d.event.special.frame.handler,b=d.Event("frame"),e=this.array,f=e.length;for(b.frameCount=this.frameCount;f--;)a.call(e[f],b)}var c;if(!d.event.special.frame)d.event.special.frame={setup:function(a){if(c)c.array.push(this);else{c=new i(j,a&&a.frameDuration);
 		c.array=[this];var b=setTimeout(function(){c.start();clearTimeout(b);b=null},0)}},teardown:function(){for(var a=c.array,b=a.length;b--;)if(a[b]===this){a.splice(b,1);break}if(a.length===0){c.stop();c=h}},handler:function(){d.event.handle.apply(this,arguments)}}})(jQuery);
 		}
@@ -83,18 +83,18 @@ jQuery(document).ready(function(){
 						lay_opt.push("{'xparallax':"+ layer_count*(index+1)+" , 'yparallax':"+ layer_count*(index+1)+"}");
 					})
 					lay_opt = lay_opt.join(",");
-					
+
 					if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
 						var is_mobile = 'false';
 					else
 						var is_mobile = 'true';
-					
+
 					var is_img_parallax_disable_on_mobile = jQuery(this).parent().data('img-parallax-mobile-disable').toString();
 					if(is_mobile == 'true' && is_img_parallax_disable_on_mobile == 'true')
 						var disable_row_effect = 'true';
 					else
 						var disable_row_effect = 'false';
-					
+
 					if(disable_row_effect == 'false')
 						eval("jQuery(this).find('.ultimate_h_parallax').parallax({mouseport: jQuery(this).parent()},"+lay_opt+")");
 				})
