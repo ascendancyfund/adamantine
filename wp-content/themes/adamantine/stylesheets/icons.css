@@ -1,11 +1,11 @@
 /* Custom Icon Font */
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoonf13c.eot?mb3b1k');
-	src:url('fonts/icomoond41d.eot?#iefixmb3b1k') format('embedded-opentype'),
-		url('fonts/icomoonf13c.woff?mb3b1k') format('woff'),
-		url('fonts/icomoonf13c.ttf?mb3b1k') format('truetype'),
-		url('fonts/icomoonf13c.svg?mb3b1k#icomoon') format('svg');
+	src:url('/wp-content/themes/adamantine/stylesheets/fonts/icomoon.eot?mb3b1k');
+	src:url('/wp-content/themes/adamantine/stylesheets/fonts/icomoon.eot?#iefixmb3b1k') format('embedded-opentype'),
+		url('/wp-content/themes/adamantine/stylesheets/fonts/icomoon.woff?mb3b1k') format('woff'),
+		url('/wp-content/themes/adamantine/stylesheets/fonts/icomoon.ttf?mb3b1k') format('truetype'),
+		url('/wp-content/themes/adamantine/stylesheets/fonts/icomoon.svg?mb3b1k#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -14,7 +14,7 @@
     @font-face
     {
         font-family: 'icomoon';
-        src: url('fonts/icomoonf13c.svg?mb3b1k#icomoon') format('svg');
+        src: url('/wp-content/themes/adamantine/stylesheets/fonts/icomoon.svg?mb3b1k#icomoon') format('svg');
     }
 }
 
